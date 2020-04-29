@@ -14,7 +14,7 @@ if (!in_array($_SERVER['REMOTE_ADDRESS'], $only_allowed_ips))
 
 # type casting
 ```
-@param int $num_packets
+* @param int $num_packets
 ```
 
 # Dev Enviornment
