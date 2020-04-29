@@ -28,6 +28,10 @@ public function Ping($host, $num_packets) {
 ```
 # black list with values or characters
 
+```
+
+```
+
 # type casting
 ```
 * @param int $num_packets
@@ -55,13 +59,17 @@ if (!isset($_SESSION['logged_in']) || !$_SESSION['logged_in'])) {
 # regex statement only looking for properly formatted input
 
 
-# functions (santize input)
+# Native functions (santize input)
 
 ```
 return shell_exec("ping -c" . escapeshellarg($number_packets) . " " . escapeshellarg($host));
 ```
 
-# functions (encode output)
+# Native functions (encode output)
+
+```
+echo htmlspecialchars($unencoded_output_string, ENT_QUOTES, 'UTF-8');
+```
 
 
 # Custom user created fudunctions 
