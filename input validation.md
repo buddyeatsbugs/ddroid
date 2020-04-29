@@ -13,6 +13,14 @@
 @param int $num_packets
 ```
 
+# Dev Enviornment
+```
+define('IS_DEV_ENVIORNMENT', false);
+if (IS_DEV_ENVIRONMENT && isset($_GET['wsdl']))
+{
+  //Provide WSDL declaration for this SOAP Web Service
+}
+```
 # regex statements
 
 
