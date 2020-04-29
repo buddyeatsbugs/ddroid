@@ -5,7 +5,7 @@
 ```
 Parameter Names
 Paramter Values
-Probe Pairs and Responses
+Probe Pairs and Response Analysis
 ```
 
 # Input validation & controls bypass
