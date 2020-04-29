@@ -57,6 +57,9 @@ if (!isset($_SESSION['logged_in']) || !$_SESSION['logged_in'])) {
 
 # functions (santize input)
 
+```
+return shell_exec("ping -c" . escapeshellarg($number_packets) . " " . escapeshellarg($host));
+```
 
 # functions (encode output)
 
