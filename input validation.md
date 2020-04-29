@@ -1,7 +1,11 @@
 # input validation PHP
 
 # white list with values
-
+$only_allowed_ips = array('127.0.0.1');
+if (!in_array($_SERVER['REMOTE_ADDRESS'], $only_allowed_ips))
+{
+  die('Unauthorized Access');
+}
 
 # white list with characters
 
