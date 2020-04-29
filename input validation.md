@@ -1,12 +1,20 @@
 # input validation PHP
 
 # white list with values
+```
 $only_allowed_ips = array('127.0.0.1');
 if (!in_array($_SERVER['REMOTE_ADDRESS'], $only_allowed_ips))
 {
   die('Unauthorized Access');
 }
 
+public function Ping($host, $num_packets {
+  if(!in_array($host, array('127.0.0.1', 'www.google.com')) || !in_array($num_packets, array(1,2,3,4))) {
+    return 'host or number of packets not allowed, sorry eh';
+  }
+}
+
+```
 # white list with characters
 
 
