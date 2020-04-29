@@ -1,6 +1,6 @@
 # input validation PHP
 
-# white list with values
+# white list with values (prefered)
 ```
 $only_allowed_ips = array('127.0.0.1');
 if (!in_array($_SERVER['REMOTE_ADDRESS'], $only_allowed_ips))
@@ -16,7 +16,7 @@ public function Ping($host, $num_packets) {
 
 ```
 
-# white list with characters
+# white list with characters (still good but not as great as values)
 
 ```
 public function Ping($host, $num_packets) {
