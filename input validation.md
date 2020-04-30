@@ -75,3 +75,19 @@ echo htmlspecialchars($unencoded_output_string, ENT_QUOTES, 'UTF-8');
 # Custom user created fudunctions 
 
 
+# HTTP VERB SPOOFING
+```
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {//This can only be done
+using POST!
+ if (isset($_POST['user']) && !preg_match('/^[a-z]+$/i',
+$_POST['user'])) {
+ die('Invalid user!'); //Abort
+ }
+if (isset($_POST['pass']) && !preg_match('/^[a-z]+$/i', $_POST['pass']))
+{
+ die('Invalid password!'); //Abort
+ }
+ add_user($_REQUEST['user'], $_REQUEST['pass']);//$_GET is not
+validated!
+} 
+```
