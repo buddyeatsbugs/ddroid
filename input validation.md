@@ -52,6 +52,7 @@ session_start();
 if (!isset($_SESSION['logged_in']) || !$_SESSION['logged_in'])) {
   die('Unauthorized access');
 }
+```
 
 # regex statements
 
@@ -75,7 +76,7 @@ echo htmlspecialchars($unencoded_output_string, ENT_QUOTES, 'UTF-8');
 # Custom user created fudunctions 
 
 
-# HTTP VERB SPOOFING
+# HTTP VERB/METHOD Tampering + REST ACTION SPOOFING
 ```
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {//This can only be done
 using POST!
