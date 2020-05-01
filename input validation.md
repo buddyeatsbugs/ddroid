@@ -55,6 +55,13 @@ if (!isset($_SESSION['logged_in']) || !$_SESSION['logged_in'])) {
 ```
 
 # regex statements
+```
+if(preg_match("/<!DOCTYPE/i", preg_replace("/\s/", '',
+$xml_string))) {//DOCTYPE found
+ die('Unsupported XML file, sorry'); //This is an attack,
+abort processing ASAP
+ }
+ ```
 
 
 # regex statement only looking for properly formatted input
