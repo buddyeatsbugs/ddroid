@@ -81,7 +81,7 @@ return shell_exec("ping -c" . escapeshellarg($number_packets) . " " . escapeshel
 
 # Native functions (canonicalize filepath names)
 ```
-file_put_contents('/home/www/uploads' . basename(realname($filename), base64_decode($file_contents));
+file_put_contents('/home/www/uploads' . basename(realname(sha1(time) . '.txt'), base64_decode($file_contents));
 ```
 
 # Native functions (encode output)
