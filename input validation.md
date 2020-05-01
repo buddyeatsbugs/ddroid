@@ -61,6 +61,13 @@ $xml_string))) {//DOCTYPE found
  die('Unsupported XML file, sorry'); //This is an attack,
 abort processing ASAP
  }
+ 
+ 
+ if (!preg_match('|^[a-z0-9\.]+$|i',
+$filename)) {
+ return 'Sorry, only letters and numbers allowed
+in the filename!';
+ }
  ```
 
 
