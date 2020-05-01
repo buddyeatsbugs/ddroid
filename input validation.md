@@ -75,9 +75,13 @@ in the filename!';
 
 
 # Native functions (santize input)
-
 ```
 return shell_exec("ping -c" . escapeshellarg($number_packets) . " " . escapeshellarg($host));
+```
+
+# Native functions (canonicalize filepath names)
+```
+file_put_contents('/home/www/uploads' . basename(realname($filename), base64_decode($file_contents));
 ```
 
 # Native functions (encode output)
